@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>two sum</title>
+    </head>
+    <body>
+        <script>
+            var twoSum = function (numbers, target) {
+                const result = [];
+                console.log(result);
+                for (var i = 0; i < numbers.length; i++) {
+                    for (var j = 1; j < numbers.length; j++) {
+                        if (numbers[j] + numbers[i] === target) {
+                            result.push(i);
+                            result.push(j);
+                        }
+                    }
+                }
+                return result;
+            }
+            // twoSum([2,7,11,15],9)
+        </script>
+    </body>
+</html>
